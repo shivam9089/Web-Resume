@@ -1,335 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="icon" type="image/x-icon" href="/images/fav.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2585eb77c4.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1117">
+  <meta name="description" content="Shivam Rathore is a software engineer building cross-platform apps and AI-powered engineering workflows.">
+  <title>Shivam Rathore — Software Engineer</title>
+  <link rel="icon" href="images/fav.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2585eb77c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Shivam</span><br>Rathore from <span id="in">In</span>d<span id="ia">ia</span></h1> 
-            </div>
+  <header class="site-header" id="home">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Shivam Rathore home">SR<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Work</a>
+        <a class="nav-contact" href="mailto:srathore4315@gmail.com">Let’s talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER <span class="eyebrow-divider">/</span> GHAZIABAD, INDIA</p>
+        <h1>Building playful<br>products and <span>smarter</span><br>ways to build them.</h1>
+        <p class="hero-summary">I’m Shivam Rathore, a software engineer with about 2 years of experience creating cross-platform applications and AI-powered engineering workflows.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <i class="fa-solid fa-arrow-down"></i></a><a class="text-link" href="images/Shivam_Resume.pdf" target="_blank" rel="noreferrer">View resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="hero-social"><a href="https://github.com/shivam9089" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/shivamrathore-/" target="_blank" rel="noreferrer">LinkedIn <i class="fa-brands fa-linkedin"></i></a><a href="mailto:srathore4315@gmail.com">Email <i class="fa-regular fa-envelope"></i></a></div>
+      </div>
+      <div class="hero-visual" aria-label="Portrait of Shivam Rathore">
+        <div class="portrait-frame"><img src="images/user.jpeg" alt="Shivam Rathore"></div>
+        <div class="float-card"><span class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span><span>Curious about<br><strong>AI + automation</strong></span></div>
+        <span class="visual-index">01 — 04</span>
+        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="wrap section-grid">
+        <div><p class="eyebrow">01 / ABOUT</p><h2 class="section-title">A little about<br><span>how I work.</span></h2></div>
+        <div class="about-copy"><p class="lead">I build thoughtful product experiences across web and mobile, and look for ways to make the engineering process itself more effective.</p><p>At SplashLearn, I work across interactive applications, multiplayer experiences, reusable learning modules and AI-assisted workflows. I enjoy owning a feature end to end: understanding the product need, shaping the implementation, and helping it reach production.</p><div class="stats"><div><strong>2<span>+</span></strong><small>years in software</small></div><div><strong>1,000<span>+</span></strong><small>DSA problems solved</small></div><div><strong>20–40<span>%</span></strong><small>completion uplift</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE</p><h2 class="section-title">Where I’ve<br><span>made an impact.</span></h2></div><p class="section-note">Product engineering, from hands-on implementation to shipping improvements at scale.</p></div>
+        <article class="role-card"><div class="role-meta"><span class="role-mark">SL</span><div><h3>StudyPad India Pvt. Ltd. <span>(SplashLearn)</span></h3><p>Software Engineer · Gurugram, Haryana</p></div><time>Jan 2025 — Present</time></div><ul class="impact-list"><li>Build interactive, high-performance applications with JavaScript and TypeScript using Cocos Creator and Cocos2d-JS, deployed on web, iOS and Android.</li><li>Designed AI agents and agentic workflows that automate repetitive engineering tasks; used Claude Code and Figma tooling to generate UI prefabs from design specifications.</li><li>Owned <em>Flip-N-Find</em> from development through production deployment and delivered 15 reusable, template-based modules for the Grammar project.</li><li>Improved user completion rates by 20–40% through data-informed A/B tests; optimized performance with spritesheets, compressed assets, object pooling and lazy loading.</li><li>Built real-time multiplayer features and responsive experiences for iPhone, iPad and desktop; integrated Mixpanel analytics.</li></ul></article>
+        <article class="role-card internship"><div class="role-meta"><span class="role-mark muted">SP</span><div><h3>StudyPad India Pvt. Ltd. <span>(SplashLearn)</span></h3><p>Software Development Engineer Intern</p></div><time>Jul 2024 — Jan 2025</time></div><ul class="impact-list"><li>Built frontend features and animations with Flutter, ReactJS and TypeScript; migrated a complete screen from ReactJS to Flutter.</li><li>Implemented an adaptive content algorithm that increased completion rate by 20%; integrated REST and GraphQL APIs and supported CI/CD with Jenkins.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="wrap section-grid"><div><p class="eyebrow">03 / TOOLKIT</p><h2 class="section-title">Tools for<br><span>the right job.</span></h2></div><div class="skill-groups">
+        <div class="skill-group"><span class="skill-number">01</span><div><h3>Languages</h3><p>C · C++ · JavaScript · TypeScript · Dart</p></div></div>
+        <div class="skill-group"><span class="skill-number">02</span><div><h3>Frontend & platforms</h3><p>HTML · CSS · ReactJS · Flutter · Cocos Creator · Cocos2d-JS</p></div></div>
+        <div class="skill-group"><span class="skill-number">03</span><div><h3>Generative AI & automation</h3><p>LLMs · AI agents · Agentic AI · MCP · Vector embeddings · Claude Code · Workflow automation</p></div></div>
+        <div class="skill-group"><span class="skill-number">04</span><div><h3>Tools & integration</h3><p>REST · GraphQL · Jira · Jenkins · Git · GitHub · Chrome DevTools · Mixpanel · NPM · OOP</p></div></div>
+      </div></div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">04 / SELECTED WORK</p><h2 class="section-title">Built with care.<br><span>Made to work.</span></h2></div><a class="text-link all-work" href="https://github.com/shivam9089" target="_blank" rel="noreferrer">More on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-image"><img src="images/work-1.png" alt="Notes app project preview"><span class="project-tag">FULL STACK</span></div><div class="project-info"><div><h3>Notes, end to end</h3><p>A MERN notes app with user accounts and full create, read, update and delete workflows.</p></div><a href="https://github.com/shivam9089" aria-label="Find project on GitHub" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card"><div class="project-image"><img src="images/work-2.png" alt="JavaScript notes app project preview"><span class="project-tag">JAVASCRIPT</span></div><div class="project-info"><div><h3>Notes app</h3><p>A lightweight notes app with add, edit, delete and local save/load features.</p></div><a href="https://github.com/shivam9089/Notes_app_js" aria-label="View Notes app on GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a></div></article>
+          <article class="project-card"><div class="project-image"><img src="images/work-3.png" alt="Street Fighter game project preview"><span class="project-tag">JAVA · GAME</span></div><div class="project-info"><div><h3>Street Fighter 2D</h3><p>A two-player fighting game built with Java, Swing and object-oriented programming.</p></div><a href="https://github.com/shivam9089/Street-Fighter-game" aria-label="View Street Fighter on GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a></div></article>
         </div>
-    </div>
+        <div class="coding-links"><span class="eyebrow">ALWAYS LEARNING</span><p>1,000+ DSA problems solved across <a href="https://auth.geeksforgeeks.org/user/shivamrathorgvh7" target="_blank" rel="noreferrer">GeeksforGeeks</a>, <a href="https://leetcode.com/shivam_rathore43/" target="_blank" rel="noreferrer">LeetCode</a> and <a href="https://www.codingninjas.com/codestudio/profile/shivam_rathore" target="_blank" rel="noreferrer">CodeStudio</a>.</p></div>
+      </div>
+    </section>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Highly motivated and dedicated Engineering Fresher with a strong educational
-                        background and a passion for innovation. Equipped with theoretical knowledge gained
-                        through academic coursework and practical experience gained from internships and
-                        projects. Excellent problem-solving skills and a proactive approach to learning and
-                        adapting to new technologies. Strong communication and teamwork abilities, with a
-                        proven track record of collaborating effectively in multidisciplinary environments.
-                        Seeking an opportunity to contribute to the growth and success of a dynamic
-                        engineering team.
-                        </p>
-                    <div class="tab-titles">
-                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class ="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br>JavaScript, TypeScript, HTML, Java , C++</li>
-                       
-                            <li><span>Full Stack Web Development</span><br>Designing Full Stack Web Application with MERN (MongoDB ExpressJS ReactJS NodeJS)</li>
-                            <li><span>Front End Web Development</span><br>HTML, CSS, React JS, RTK , Axios, React Router DOM, MUI, BootStrap,
-                                Form hooks, WebPack, Babel JS, React Testing Library</li>
-                            <li><span>Back End Web Development</span><br>Node JS, NPM , NPX, Express JS , Winston, Morgan, Chalk,
-                                Chokidar, Express file upload, PassPortJS, NodeMailer,
-                                Mongoose, MongoDB, Deployment on AWS</li>
-                            <li><span>BlockChain and Web3 Development</span><br>Designing Decentralised Applications and standard Ethereum tokens (ERC-20 ERC721 NFT) | Solidity</li>    
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            
-                            <li><span>07/2023 - Current</span><br>MERN Stack training at Brain Mentors - Build a CRUD (Create Read Update Delete) fullstack project (Notes Taking App) which has functionalities like add note, delete note, update note, user login and registration</li>
-                            <li><span>03/2023 - 04/2023</span><br>Internship at Ybi Foundation in Machine Learning - Build a project on wine quality prediction using Support Vector Machine </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020-2024</span><br>B.tech in Computer Science and Engineering from Raj Kumar Goel Institute of Technology (AKTU) Ghaziabad - 8.5 SGPA</li>
-                            <li><span>2019</span><br>Passed 12th from Gautam Public Sr. Sec. School Ghaziabad (CBSE) with 93.8%</li>
-                            <li><span>2017</span><br>Passed 10th from Gautam Public Sr. Sec. School (CBSE) Ghaziabad with 9.6 CGPA</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------------services------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Front End Development</h2>
-                    <p>
-                        Designing and styling industry standard UI, fetching and processing data using JavaScript, HTML, CSS, MUI, ReactJS, BootStrap, firebase, fontawesome, CDN 
-                    </p>
-                    <!---<a href="#">Learn more</a>---->
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Backend Development</h2>
-                    <p>
-                        Developing Backend of an application and connect to database using NodeJS, ExpressJS, Mongoose, MongoDB and Bcrypt for password hashing
-                    </p>
-                    <!--------<a href="#">Learn more</a>------>
-                </div>
-                <div>
-                   
-                    <i class="fa-brands fa-ethereum"></i>
-                    <h2>Blockchain Development</h2>
-                    <p>
-                        Developing Decentralised Applications over Blockchain.
-                    </p>
-                  <!------  <a href="#">Learn more</a>--------->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!------portfolio------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3><b>Fullstack Notes Taking App</b></h3>
-                    <p>Developed front end and backend of Notes Taking application which has Notes CRUD, User CRUD, build using MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    
-                    
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3><b>Notes Taking App JavaScript</b></h3>
-                    <p>Developed a Simple Notes Taking Application in JavaScript which has features like Add note, delete note, update note, save and load the note</p>
-                    <a href="https://shivam9089.github.io/Notes_app_js/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="https://github.com/shivam9089/Notes_app_js" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3><b>Street Fighter 2D Game</b></h3>
-                    <p>Street Fighter is a 2D game build using Java, Swing, OOPs Concepts, In this game two players fight each other by kicking and other actions and their health also get affected</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="https://github.com/shivam9089/Street-Fighter-game" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="work-list" id="morework">
-            <div class="work" >
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3><b>ERC-20 Token</b></h3>
-                    <p>Build an Standard ERC-20 Token which has functionalities of sending and receiving ethers and named it GammaToken</p>
-                    
-                    <a href="https://github.com/shivam9089/My_ERC20_token-Gamma" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://youtu.be/0zefnhJDG_8" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="work" >
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3><b>Wine Quality Prediction</b></h3>
-                    <p>Build A Machine Learning based project on Wine Quality Prediction using Support Vector Machine</p>
-                    
-                    <a href="https://github.com/shivam9089/Wine_Quality_prediction" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    
-                </div>
-            </div>
-            <div class="work" >
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3><b>Web Resume</b></h3>
-                    <p>Build this Web Resume Portfolio using HTML, CSS and JavaScript</p>
-                    <a href="https://shivam9089.github.io/Web-Resume/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="https://github.com/shivam9089/Web-Resume" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            
-        </div>
-
-
-
-        <p class="btn" id="seemore" onclick="myFunction()">See more</p>
-    </div>
-    <div class="container">
-        <h1 class="sub-title">My Coding Profiles</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/leetcode.png">
-                    <div class="layer">
-                        <h3><b>Leetcode</b></h3>
-                        <p>Solved 30+ DSA Problems</p>
-                        <a href="https://leetcode.com/shivam_rathore43/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        
-                        
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/gfg.jpg">
-                    <div class="layer">
-                        <h3><b>GeeksForGeeks</b></h3>
-                        <p>Solved 100+ DSA Problems</p>
-                        <a href="https://auth.geeksforgeeks.org/user/shivamrathorgvh7" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/codestudio.png">
-                    <div class="layer">
-                        <h3><b>Codestudio</b></h3>
-                        <p>Solved 170+ DSA problems</p>
-                        <a href="https://www.codingninjas.com/codestudio/profile/shivam_rathore" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-<!------contact----------->
-<div id="contact">
-   <div class="container">
-    <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i> srathore4315@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91-9958587530</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/shivam-rathore-357834222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/shivam9089" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://medium.com/@shivamrathore9990023628"><i class="fa-brands fa-medium"></i></a>
-       
-            </div>
-            <a href="images/Shivam Resume RKGIT.pdf" download class="btn btn2">Download CV</a>
-        </div>    
-        <div class="contact-right"> 
-              <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-              </form>
-              <span id="msg"></span>
-        </div>
-    </div>
-   </div> 
-   <div class="copyright">
-    <p>Copyright &copy; Shivam. Made with <i class="fa-solid fa-heart"> </i> by Shivam Rathore </p>
-   </div>
-</div>
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname);
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script> 
-<script>
-    function myFunction() {
-  
-  var moreText = document.getElementById("morework");
-  var btnText = document.getElementById("seemore");
-
-  if (moreText.style.display === "grid") {
-    
-    btnText.innerHTML = "See more";
-    moreText.style.display = "none";
-  } else {
-    
-    btnText.innerHTML = "See less";
-    moreText.style.display = "grid";
-  }
-}
-
-</script>
-
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8Tms5D4gqZ5dUy8ROUMD2LGQE9PZTE9wyPuI2ELTSIJsAt-IuxwADJuVfIO8FSpcHNQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+    <section class="contact-section" id="contact"><div class="wrap contact-inner"><p class="eyebrow">HAVE SOMETHING IN MIND?</p><h2>Let’s build something<br><span>worth remembering.</span></h2><a class="button button-light" href="mailto:srathore4315@gmail.com">Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="contact-details"><a href="mailto:srathore4315@gmail.com">srathore4315@gmail.com</a><span>Ghaziabad, UP · India</span></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home">SR<span>.</span></a><span>© 2026 Shivam Rathore</span><div><a href="https://github.com/shivam9089" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/shivamrathore-/" target="_blank" rel="noreferrer">LinkedIn</a><a href="images/Shivam_Resume.pdf" target="_blank" rel="noreferrer">Resume</a></div></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('is-open', !expanded);
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menuButton.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('is-open');
+    }));
   </script>
 </body>
 </html>
